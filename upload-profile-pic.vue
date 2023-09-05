@@ -25,7 +25,7 @@
               Select picture
             </div>
             <div class="col image-preview" v-else>
-              <img v-if="profileImageSrc" :src="profileImageSrc" />
+              <img v-if="profileImageSrc" :src="profileImageSrc" v-bind:alt="profile pic"/>
             </div>
           </div>
         </form>
